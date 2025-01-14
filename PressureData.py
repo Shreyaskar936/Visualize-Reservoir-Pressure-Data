@@ -6,7 +6,7 @@ import pandas as pd
 import seaborn as sns
 from matplotlib.ticker import MaxNLocator
 
-data = pd.read_excel(r"Project3\Reservoir_Pressure_Data_Student_Updated.xlsx")
+data = pd.read_excel(r"Reservoir_Pressure_Data_Student_Updated.xlsx")
 data['STUDY_DATE'] = pd.to_datetime(data['STUDY_DATE'])
 data['FIELD_NAME'] = data['WELL_NAME'].str[:4]
 
